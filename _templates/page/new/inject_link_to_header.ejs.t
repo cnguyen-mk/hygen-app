@@ -1,10 +1,9 @@
 ---
 inject: true
 to: src/components/Header/index.tsx
-before: </ul>
-skip_if: <Link to={'/<%= route || 'newPage' %>'}><%= name || 'newPage' %></Link>
+before: </Box>
+after: </StyledLink>
+skip_if: <StyledLink to={'/<%= route || 'newPage' %>'}><%= name || 'newPage' %></StyledLink>
 eof_last: false
 ---
-          <li>  
-            <Link to={'/<%= route || 'newPage' %>'}><%= name || 'newPage' %></Link>
-          </li>
+            <StyledLink component={RouterLink} to={'/<%= route || 'newPage' %>'}><%= name || 'newPage' %></StyledLink>

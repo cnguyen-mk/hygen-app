@@ -12,7 +12,7 @@ const Admin = () => {
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Typography variant="h1">Admin Management</Typography>
-              <Typography variant="body2">This is admin page.</Typography>
+              <Typography variant="body2">this is admin page</Typography>
             </Grid>
           </Grid>
         </Container>

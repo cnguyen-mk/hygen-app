@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Admin from './pages/Admin'
 import Hello from './pages/Hello'
 import Home from './pages/Home'
-import Admin from './pages/Admin'
 import User from './pages/User'
 
 function App() {
@@ -10,8 +10,9 @@ function App() {
     <Routes>
       <Route path="/home" element={<Home />} />
       <Route path="/Hello" element={<Hello />} />
-      <Route path="/user" element={<User />} />
       <Route path="/admin-management" element={<Admin />} />
+      <Route path="/user-profile" element={<User />} />
+      <Route path="/admin" element={<Admin />} />
     </Routes>
   )
 }
